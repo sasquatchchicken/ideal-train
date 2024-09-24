@@ -1,6 +1,6 @@
 # ideal-train
 Malicious_PowerShell_Payload
-
+[Demonstration video on TikTok](https://www.tiktok.com/@_toksa/video/7418198166027144490)
 # Repository Overview
 
 This repository demonstrates a potential nefarious payload delivery system leveraging a BadUSB attack (DuckyScript) to disable security defenses and establish a reverse shell. It walks through how an attacker could craft and deploy malicious payloads using PowerShell and obfuscation techniques. The repo includes DuckyScript, obfuscated PowerShell reverse shell, and a PowerShell script that connects back to a Command & Control (C2) server.
